@@ -463,7 +463,7 @@ header nav a {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  min-height: 60vh;
   padding: 1em 0.5em;
   font-size: 8px;
   -webkit-box-orient: vertical;
@@ -843,12 +843,6 @@ footer img {
     height: 300px;
     border-radius: 30px;
   }
-  #about {
-    min-height: 100vh;
-  }
-  #about .body {
-    min-height: 80vh;
-  }
   #reservation .text h3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -883,6 +877,12 @@ footer img {
     position: relative;
     height: 12em;
     width: 14em;
+  }
+  #about {
+    min-height: 100vh;
+  }
+  #about .body {
+    min-height: 80vh;
   }
 }
 

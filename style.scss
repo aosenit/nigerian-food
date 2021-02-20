@@ -374,7 +374,7 @@ header nav{
     .shopping-container{
         display: flex;
         width: 100%;
-        min-height: 100vh;
+        min-height: 60vh;
         padding: 1em 0.5em;
         font-size: 8px;
         flex-direction: column;
@@ -738,13 +738,7 @@ footer{
     
     }
 
-    #about{
-        min-height: 100vh;
-    
-        }
-        #about .body{
-            min-height: 80vh;
-        }
+   
 
     #reservation{
 
@@ -789,7 +783,14 @@ footer{
          
         }
   
-    }
+    } 
+    #about{
+        min-height: 100vh;
+    
+        }
+        #about .body{
+            min-height: 80vh;
+        }
 }
 
 
@@ -800,6 +801,4 @@ footer{
     #home{
         justify-content: center;
     }
-
-   
 }
