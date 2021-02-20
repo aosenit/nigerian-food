@@ -181,7 +181,7 @@ main{
             color: var(--style-color);
             margin-top: .5em;
             border-radius: 5px;
-            transition: all .5s linear;
+            transition: background-color .5s linear;
         }
 
         button:hover{
@@ -226,7 +226,7 @@ header nav{
 #about{
     box-shadow: 0 1px 1px rgba(0,0,0,0.11);
     width: 100%;
-    min-height: 50vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -243,13 +243,13 @@ header nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 40vh;
+        min-height: 50vh;
     }
 
       .about__image{
           position: relative;
-          height: 150px;
-          width: 200px;
+          height: 8em;
+          width: 10em;
          transform-style: preserve-3d;
 
          animation: animate 15s linear infinite;
@@ -704,7 +704,7 @@ footer{
 
 
         li{
-           transition: 0.5s all;
+           transition: 0.5s border;
             padding: 0;
             border-radius: 10px;
             margin-left: 1em;
@@ -723,6 +723,8 @@ footer{
             font-weight: 700;
             letter-spacing: .2em;
         }
+
+     
     }
 
 
@@ -743,6 +745,35 @@ footer{
         #about .body{
             min-height: 80vh;
         }
+
+    #reservation{
+
+            .text h3{
+                display: flex;
+                width: 100%;
+                font-size: .7em;
+                text-align: left;
+            
+        }
+
+        .text{
+           
+            text-align: left;
+        
+        }
+
+        .shopping-item{
+            position: relative;
+        }
+        .input{
+            width: 3%;
+            margin: 0;
+            padding: 0;
+            justify-self: center;
+            position: absolute;
+            left: 47%;
+        }
+    }
 }
 
 @media screen and (min-width:1280px){
@@ -750,4 +781,25 @@ footer{
     #menu .image-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+ #about{
+        .about__image{
+            position: relative;
+            height: 12em;
+            width: 14em;
+         
+        }
+  
+    }
+}
+
+
+@media screen and (min-width:1800px){
+    body{
+        font-size: 18px;
+    }
+    #home{
+        justify-content: center;
+    }
+
+   
 }

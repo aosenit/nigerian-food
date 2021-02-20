@@ -217,8 +217,8 @@ main {
   color: var(--style-color);
   margin-top: .5em;
   border-radius: 5px;
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
+  -webkit-transition: background-color .5s linear;
+  transition: background-color .5s linear;
 }
 
 #home .text button:hover {
@@ -264,7 +264,7 @@ header nav a {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11);
   width: 100%;
-  min-height: 50vh;
+  min-height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,13 +296,13 @@ header nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 40vh;
+  min-height: 50vh;
 }
 
 #about .about__image {
   position: relative;
-  height: 150px;
-  width: 200px;
+  height: 8em;
+  width: 10em;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-animation: animate 15s linear infinite;
@@ -817,8 +817,8 @@ footer img {
             align-items: center;
   }
   header nav li {
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
+    -webkit-transition: 0.5s border;
+    transition: 0.5s border;
     padding: 0;
     border-radius: 10px;
     margin-left: 1em;
@@ -849,12 +849,51 @@ footer img {
   #about .body {
     min-height: 80vh;
   }
+  #reservation .text h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    font-size: .7em;
+    text-align: left;
+  }
+  #reservation .text {
+    text-align: left;
+  }
+  #reservation .shopping-item {
+    position: relative;
+  }
+  #reservation .input {
+    width: 3%;
+    margin: 0;
+    padding: 0;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    position: absolute;
+    left: 47%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   #menu .image-grid {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #about .about__image {
+    position: relative;
+    height: 12em;
+    width: 14em;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  body {
+    font-size: 18px;
+  }
+  #home {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
