@@ -331,7 +331,6 @@ header nav{
             min-height: 13em;
             position: relative;
             width: 100%;
-            background-color: red;
             overflow: hidden;
         }
 
@@ -345,6 +344,21 @@ header nav{
         h5{
             margin-bottom: 1em;
             font-size: 1em;
+
+            span{
+                color: var(--style-color);
+                border: var(--style-color) 2px solid;
+                margin-left: 1em;
+                padding: 0.1em .6em;
+                background-color: var(--white-color);
+                cursor: pointer;
+                transition: .5s linear all;
+            }
+
+            span:hover{
+                color: var(--font-color);
+                background-color: var(--style-color);
+            }
         }
 
         img{
@@ -409,6 +423,10 @@ header nav{
         border: var(--style-color) 2px solid;
         outline: none;
         border-radius: 2px;
+    }
+    button:hover{
+        color: var(--font-color);
+        background-color: var(--style-color);
     }
     .shopping-item{
         display: flex;

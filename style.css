@@ -417,7 +417,6 @@ header nav a {
   min-height: 13em;
   position: relative;
   width: 100%;
-  background-color: red;
   overflow: hidden;
 }
 
@@ -431,6 +430,22 @@ header nav a {
 #menu .menu-image h5 {
   margin-bottom: 1em;
   font-size: 1em;
+}
+
+#menu .menu-image h5 span {
+  color: var(--style-color);
+  border: var(--style-color) 2px solid;
+  margin-left: 1em;
+  padding: 0.1em .6em;
+  background-color: var(--white-color);
+  cursor: pointer;
+  -webkit-transition: .5s linear all;
+  transition: .5s linear all;
+}
+
+#menu .menu-image h5 span:hover {
+  color: var(--font-color);
+  background-color: var(--style-color);
 }
 
 #menu .menu-image img {
@@ -502,6 +517,11 @@ header nav a {
   border: var(--style-color) 2px solid;
   outline: none;
   border-radius: 2px;
+}
+
+#reservation button:hover {
+  color: var(--font-color);
+  background-color: var(--style-color);
 }
 
 #reservation .shopping-item {

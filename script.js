@@ -59,22 +59,143 @@ changeTheme.addEventListener('click', () => {
 
 
 
-let count = 0
-const aboutImages = document.querySelectorAll('.about-img')[0]
-const backMove= document.querySelector('.back-btn')
-const frontMove= document.querySelector('.front-btn')
-const slider = document.querySelector('.about__image')
+//get cart Object
+const getCartObject = (e) => {
+    const menuObject = {}
+    const menuz = e.target.closest("div")
+    const menuImage = menuz.querySelector('.menu-img').src
+    const menuName = menuz.querySelector('.food-name').textContent 
+    
+    const price = menuz.querySelector('strong').textContent
+    let menuPrice = price.slice(1)
+    menuObject.foodImage = menuImage
+    menuObject.foodName = menuName
+    menuObject.foodPrice = menuPrice
+    
+    
 
-aboutImages. src.style.right = '300px'
+// Stop Reservation from being made for same food twice
+    const names = cartContainer.querySelectorAll('.food-title')
+    for (let i = 0; i < names.length; i++) {
+        if (names[i].textContent == menuName) {
+            alert('This Food is already added')
+            
+            return 
+        }
+        
+          
+      }
 
-// let sliderWidth = aboutImages[0].offsetWidth
-// console.log(slider,sliderWidth)
-// backMove.addEventListener('click', () => {
-//    count++
-//    if (count<= 0) {
-//        count = aboutImages.length-1
-//       //aboutImages[count].style.left = `${sliderWidth} * ${count} *px`
-//       slider.style.display = 'none'
-//    }
+
+
+  addToReservation(menuObject)
+  let totalP = 0
+  const reservedPrices = cartContainer.querySelectorAll('.resrved-price')
+           
+ 
+ reservedPrices.forEach((price => {
+     const numberPrice = parseInt(price.textContent)
+     
+     totalP += numberPrice
+ }))
+ 
+ document.querySelector('.final-price').textContent = `$ ${totalP}`
+ document.querySelector('.delivery-fee').textContent = `$ 10`
+ const sumTotal = totalP + 10
+ document.querySelector('.sum-total').textContent = `$ ${sumTotal}`
+
+} 
+
+
+
+
+const addIcons = document.querySelectorAll('.add-icon')
+
+const cartContainer = document.getElementsByClassName('shopping-container')[0]
+const cartContain = document.getElementsByClassName('food-title')[0]
+
+
+addIcons.forEach((addIcon, index) => {
+addIcon.addEventListener('click', getCartObject)
+})
+
+
+    
+
+//create dynamic reservation item
+const addToReservation = (menuObject) => {
+
+const reservedItem = document.createElement('div')
+
+reservedItem.classList.add("shopping-main")
+
+reservedItem.innerHTML = `
+<div class="shopping-main">
+<div class="shopping-item">
+<div class="image-text">
+    <div class="img-shopping">
+        <img class="img-shop" src="${menuObject.foodImage}" alt="">
+    </div>
+    <div class="text">
+        <h3 class='food-title'>${menuObject.foodName}</h3>
+        <h4 >PRICE: $ <span class="resrved-price"> ${menuObject.foodPrice}</span> </h4>
+        <button class="remove-btn">REMOVE</button>
+    </div>
+</div>
+
+<div class="input">
+    <input class="input-num"  type="number" value="1" min="1" disabled >
+</div>
+
+<div class="subtotal"><h4>$ ${menuObject.foodPrice}</h4></div>
+</div>
+</div>
+
+`
+
+
+const container = document.querySelector('.shopping-container')
+const summation = document.querySelector('.summation')
+container.insertBefore(reservedItem, summation)
+alert (' Menu added to reservation')
+
+//Delete item
+    
+    const deleteBtns = document.querySelectorAll('.remove-btn')
+    deleteBtns.forEach((deleteBtn) => {
+        deleteBtn.addEventListener('click', handleRemove)
+            
+        })
    
-// })
+
+}
+
+//Function in charge of deleting reservation
+function handleRemove(e) {
+        
+        e.target.parentElement.parentElement.parentElement.parentElement.remove()
+        updatePrice()
+        alert("Menu is removed from reservation")
+}
+
+
+
+
+//Update price after Delete
+function updatePrice() {
+    let totalP = 0
+ const reservedPrices = Array.from(cartContainer.querySelectorAll('.resrved-price'))
+ 
+ reservedPrices.forEach((price => {
+     const numberPrice = parseInt(price.textContent)
+     
+     totalP += numberPrice
+     return totalP
+ }))
+ 
+ document.querySelector('.final-price').textContent = `$ ${totalP}`
+ const sumTotal = totalP + 10
+ totalP == 0 ? document.querySelector('.delivery-fee').textContent = `$ 0` : document.querySelector('.delivery-fee').textContent = `$ 10`
+ totalP == 0 ? document.querySelector('.sum-total').textContent = `$ 0` :  document.querySelector('.sum-total').textContent = `$ ${sumTotal}`
+
+}
