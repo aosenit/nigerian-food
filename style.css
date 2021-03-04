@@ -95,9 +95,9 @@ header .logo span {
 header nav {
   position: absolute;
   right: -100%;
-  top: 0em;
+  top: 1em;
   width: 100%;
-  height: calc(100vh - 5em);
+  height: calc(80vh);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,14 +109,13 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
-  z-index: 100;
   -webkit-transition: ease-in-out .5s all;
   transition: ease-in-out .5s all;
-  font-size: .8em;
+  font-size: .7em;
   z-index: 999;
 }
 

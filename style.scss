@@ -84,18 +84,17 @@ header{
     nav{
         position: absolute;
         right: -100%;
-        top: 0em;
+        top: 1em;
         width: 100%;
-        height: calc(100vh - 5em);
+        height: calc(80vh);
         display: flex;
         flex-direction: column;
         background-color:var(--white-color) ;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         overflow: hidden;
-        z-index: 100;
         transition: ease-in-out .5s all;
-        font-size: .8em;
+        font-size: .7em;
        z-index: 999;
 
      
