@@ -1,324 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>E-commerce</title>
-</head>
-<body >
-    <div class="wrapper">
-        <header>
-            <div class="logo"><span>TR</span>AZ</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Local Nigerian Food</title>
+  </head>
+  <body class="wrapper">
+    <header>
+      <div class="logo">
+        <img src="./images/logo.jpeg" alt="logo" />
+        <h4>ONGBONA</h4>
+      </div>
 
-            <nav class="header__nav">
-                <li class="header__list active"><a href="#home " class="header__item ">HOME</a></li>
-                <li class="header__list"><a href="#about" class="header__item">ABOUT</a></li>
-                <li class="header__list"><a href="#menu" class="header__item">MENU</a></li>
-                <li class="header__list"><a href="#reservation" class="header__item">RESERVATION</a></li>
-                <li class="header__list"><a href="#contact" class="header__item">CONTACT</a></li>
-            </nav>
+      <nav class="header__nav">
+        <li class="header__list active">
+          <a href="#home " class="header__item">HOME</a>
+        </li>
+        <li class="header__list">
+          <a href="#about" class="header__item">ABOUT</a>
+        </li>
+        <li class="header__list">
+          <a href="#menu" class="header__item">MENU</a>
+        </li>
+        <li class="header__list">
+          <a href="#contact" class="header__item">CONTACT</a>
+        </li>
+      </nav>
 
-            <div class="toggle">
-                =
+      <div class="headerIcons">
+        <div class="toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+        <div class="cart">
+          <i class="bx bx-cart-alt"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="home">
+        <div class="home__image">
+          <img src="./images/ponded yam1.jpg" alt="" class="home-img" />
+        </div>
+        <div class="text">
+          <h1>
+            ONGBONA <span><i class="bx bxs-hot" style="color: red"></i></span>
+          </h1>
+          <p>PREMIUM NIGERIAN DELICACY</p>
+          <a href="#contact"><button class="home__btn">CONTACT</button></a>
+        </div>
+      </div>
+
+      <div id="about" class="container">
+        <h1>ABOUT</h1>
+        <p>
+          The Idea that every skill we have should be a blessing to others was a
+          motivation for this. <br />
+          We are dedicated to bringing delicious local food you dream of to your
+          doorstep.
+        </p>
+
+        <div class="body">
+          <div class="about__image">
+            <span style="--i: 1">
+              <img src="./images/poundy3.jpg" alt="" class="about-img"
+            /></span>
+            <span style="--i: 2">
+              <img src="./images/amala4.jpg" alt="" class="about-img"
+            /></span>
+            <span style="--i: 3">
+              <img src="./images/jollof2.jpg" alt="" class="about-img"
+            /></span>
+            <span style="--i: 4">
+              <img src="./images/poundy4.jpg" alt="" class="about-img"
+            /></span>
+            <span style="--i: 5">
+              <img src="./images/edi3.jpg" alt="" class="about-img"
+            /></span>
+            <span style="--i: 6">
+              <img src="./images/ewa2.jpg" alt="" class="about-img"
+            /></span>
+            <span style="--i: 7">
+              <img src="./images/edi1.jpg" alt="" class="about-img"
+            /></span>
+            <span style="--i: 8">
+              <img src="./images/jollof4.jpg" alt="" class="about-img"
+            /></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="menu" class="container">
+        <h1>MENU</h1>
+        <div class="image-grid">
+          <div class="menu-image">
+            <div class="c-image">
+              <img src="./images/snailsauce.jpg" alt="" class="menu-img" />
             </div>
-        </header>
-
-        <main>
-            <div id="home">
-                <div class="home__image">
-                    <img src="./images/ponded yam1.jpg" alt="" class="home-img">
-                </div>
-                <div class="text">
-                    <h3>LOCAL CUISINE</h3>
-                    <h1><span>TRAZ</span> FOODS</h1>
-                    <p>PREMIUM NIGERIAN DELICACY JUST FOR YOU </p>
-                    <a href="#contact" ><button class="home__btn">CONTACT  </button></a>
-                </div>
+            <h4 class="food-name">SNAIL SAUCE</h4>
+            <h5>
+              <strong>$14 </strong
+              ><span class="add-icon"><i class="bx bx-plus-medical"></i></span>
+            </h5>
+          </div>
+          <div class="menu-image">
+            <div class="c-image">
+              <img src="./images/amala2.jpg" alt="" class="menu-img" />
             </div>
+            <h4 class="food-name">AMALA AND EWEDU</h4>
+            <h5>
+              <strong>$9 </strong
+              ><span class="add-icon"><i class="bx bx-plus-medical"></i></span>
+            </h5>
+          </div>
 
-            <div id="about">
-                 <h1>ABOUT</h1>
-                 <p>The Idea that every skill we have should be a blessing to others was a motivation for this. <br>
-                We are dedicated to bringing delicious local food you dream of to your doorstep </p>
-               
-               <div class="body">
-                <div class="about__image">
-                    <span style="--i:1;"> <img src="./images/poundy3.jpg" alt="" class="about-img"></span>
-                    <span style="--i:2;"> <img src="./images/amala4.jpg" alt="" class="about-img"></span>
-                    <span style="--i:3;">   <img src="./images/jollof2.jpg" alt="" class="about-img"></span>
-                    <span style="--i:4;"> <img src="./images/poundy4.jpg" alt="" class="about-img"></span>
-                    <span style="--i:5;"> <img src="./images/edi3.jpg" alt="" class="about-img"></span>
-                    <span style="--i:6;"> <img src="./images/ewa2.jpg" alt="" class="about-img"></span>
-                    <span style="--i:7;"> <img src="./images/edi1.jpg" alt="" class="about-img"></span>
-                    <span style="--i:8;"> <img src="./images/jollof4.jpg" alt="" class="about-img"></span> 
-               </div>
-           </div>
-               </div>
-
-            <div id="menu">
-                <h1>MENU</h1>
-                <div class="image-grid">
-                    <div class="menu-image">
-                        
-                        <div class="c-image">
-                            <img src="./images/snailsauce.jpg" alt="" class="menu-img">
-                            
-                        </div>
-                        <h4 class='food-name'>SNAIL SAUCE</h4>
-                        <h5><strong>$14 </strong><span class="add-icon">ADD</span></h5> 
-                    </div>
-                        <div class="menu-image">
-                            <div class="c-image">
-                            <img src="./images/amala2.jpg" alt="" class="menu-img">
-                            </div>
-                            <h4 class='food-name'>AMALA AND EWEDU</h4>
-                            <h5><strong>$9 </strong><span class="add-icon">ADD</span></h5>
-                        </div>
-
-                        <div class="menu-image">
-                            <div class="c-image">
-                            <img src="./images/amala3.jpg" alt="" class="menu-img">
-                            </div>
-                            <h4 class='food-name'>AMALA(VVIP TREAT)</h4>
-                            <h5><strong>$15</strong> <span class="add-icon">ADD</span></h5>
-                        </div>
-
-                        <div class="menu-image">
-                            <div class="c-image">
-                                <img src="./images/images.jpg" alt="" class="menu-img">
-                            </div>
-                            <h4 class='food-name'>OFADA RICE</h4>
-                            <h5><strong>$9</strong> <span class="add-icon">ADD</span></h5>
-                        </div>
-
-                        <div class="menu-image">
-                            <div class="c-image">
-                            <img src="./images/edi2.jpg" alt="" class="menu-img">
-                            </div>
-                            <h4 class='food-name'>EFO(ELEMI MEJE)</h4>
-                            <h5><strong>$9 </strong><span class="add-icon">ADD</span></h5>
-                        </div>
-
-                        <div class="menu-image">
-                           <div class="c-image">
-                            <img src="./images/isiewu.jpg" alt="" class="menu-img">
-                            </div>
-                            <h4 class='food-name'>ISIEWU</h4>
-                            <h5><strong>$18 </strong><span class="add-icon">ADD</span></h5>
-                        </div>
-
-                        <div class="menu-image">
-                            <div class="c-image">
-                            <img src="./images/poundy4.jpg" alt="" class="menu-img">
-                            </div>
-                            <h4 class='food-name'>POUNDED YAM AND EGUSI</h4>
-                            <h5><strong>$10 </strong><span class="add-icon">ADD</span></h5>
-                        </div>
-
-                        <div class="menu-image">
-                            <div class="c-image">
-                            <img src="./images/ewa2.jpg" alt="" class="menu-img">
-                            </div>
-                            <h4 class='food-name'>EWA AGOYIN AND PLANTAIN</h4>
-                            <h5><strong>$7</strong> <span class="add-icon">ADD</span></h5>
-                        </div>
-
-                        <div class="menu-image">
-                            <div class="c-image">
-                            <img src="./images/owo.jpg" alt="" class="menu-img">
-                            </div>
-                            <h4 class='food-name'>OWO SOUP</h4>
-                            <h5><strong>$12 </strong><span class="add-icon">ADD</span></h5>
-                        </div>
-
-                        <div class="menu-image">
-                            <div class="c-image">
-                            <img src="./images/blacksoup.jpg" alt="" class="menu-img">
-                            </div>
-                            <h4 class='food-name'>BLACKSOUP</h4>
-                            <h5><strong>$10</strong> <span class="add-icon">ADD</span></h5>
-                        </div>
-                        <div class="menu-image">
-                            <div class="c-image">
-                            <img src="./images/afang.jpg" alt="" class="menu-img">
-                            </div>
-                            <h4 class='food-name'>AFANG SOUP</h4>
-                            <h5><strong>$9 </strong><span class="add-icon">ADD</span></h5>
-                        </div>
-
-                        <div class="menu-image">
-                            <div class="c-image">
-                            <img src="./images/banga.jpg" alt="" class="menu-img">
-                            </div>
-                            <h4 class='food-name'>BANGA SOUP</h4>
-                            <h5><strong>$11</strong> <span class="add-icon">ADD</span></h5>
-                        </div>
-                    
-                </div>
-                
+          <div class="menu-image">
+            <div class="c-image">
+              <img src="./images/amala3.jpg" alt="" class="menu-img" />
             </div>
+            <h4 class="food-name">AMALA(VVIP TREAT)</h4>
+            <h5>
+              <strong>$15</strong>
+              <span class="add-icon"><i class="bx bx-plus-medical"></i></span>
+            </h5>
+          </div>
 
-            <div id="reservation">
-                <h1>RESERVATION</h1>
+          <div class="menu-image">
+            <div class="c-image">
+              <img src="./images/images.jpg" alt="" class="menu-img" />
+            </div>
+            <h4 class="food-name">OFADA RICE</h4>
+            <h5>
+              <strong>$9</strong>
+              <span class="add-icon"><i class="bx bx-plus-medical"></i></span>
+            </h5>
+          </div>
 
+          <div class="menu-image">
+            <div class="c-image">
+              <img src="./images/edi2.jpg" alt="" class="menu-img" />
+            </div>
+            <h4 class="food-name">EFO(ELEMI MEJE)</h4>
+            <h5>
+              <strong>$9 </strong
+              ><span class="add-icon"><i class="bx bx-plus-medical"></i></span>
+            </h5>
+          </div>
 
-               <div class="shopping-container">
+          <div class="menu-image">
+            <div class="c-image">
+              <img src="./images/isiewu.jpg" alt="" class="menu-img" />
+            </div>
+            <h4 class="food-name">ISIEWU</h4>
+            <h5>
+              <strong>$18 </strong
+              ><span class="add-icon"><i class="bx bx-plus-medical"></i></span>
+            </h5>
+          </div>
 
+          <div class="menu-image">
+            <div class="c-image">
+              <img src="./images/poundy4.jpg" alt="" class="menu-img" />
+            </div>
+            <h4 class="food-name">POUNDED YAM AND EGUSI</h4>
+            <h5>
+              <strong>$10 </strong
+              ><span class="add-icon"><i class="bx bx-plus-medical"></i></span>
+            </h5>
+          </div>
 
+          <div class="menu-image">
+            <div class="c-image">
+              <img src="./images/ewa2.jpg" alt="" class="menu-img" />
+            </div>
+            <h4 class="food-name">EWA AGOYIN AND PLANTAIN</h4>
+            <h5>
+              <strong>$7</strong>
+              <span class="add-icon"><i class="bx bx-plus-medical"></i></span>
+            </h5>
+          </div>
 
-                   <div class="shopping-header">
-                       <h4>FOOD</h4>
-                       <h4>QUANTITY</h4>
-                       <h4>SUBTOTAL</h4>
-                   </div>
-<!-- 
-                   <div class="shopping-main">
-                       <div class="shopping-item">
-                           <div class="image-text">
-                               <div class="img-shopping">
-                                   <img src="./images/ewa2.jpg" alt="">
-                               </div>
-                               <div class="text">
-                                   <h3  class='food-title'>EWA AGOYIN AND PLANTAIN</h3>
-                                   <h4 class="resrved-price">PRICE: <span class="price-R">$7</span></h4>
-                                   <button>REMOVE</button>
-                               </div>
-                           </div>
+          <div class="menu-image">
+            <div class="c-image">
+              <img src="./images/owo.jpg" alt="" class="menu-img" />
+            </div>
+            <h4 class="food-name">OWO SOUP</h4>
+            <h5>
+              <strong>$12 </strong
+              ><span class="add-icon"><i class="bx bx-plus-medical"></i></span>
+            </h5>
+          </div>
 
-                           <div class="input">
-                               <input class="input-num" type="number" value="1" min="1" name="" id="">
-                           </div>
+          <div class="menu-image">
+            <div class="c-image">
+              <img src="./images/blacksoup.jpg" alt="" class="menu-img" />
+            </div>
+            <h4 class="food-name">BLACKSOUP</h4>
+            <h5>
+              <strong>$10</strong>
+              <span class="add-icon"><i class="bx bx-plus-medical"></i></span>
+            </h5>
+          </div>
+          <div class="menu-image">
+            <div class="c-image">
+              <img src="./images/afang.jpg" alt="" class="menu-img" />
+            </div>
+            <h4 class="food-name">AFANG SOUP</h4>
+            <h5>
+              <strong>$9 </strong
+              ><span class="add-icon"><i class="bx bx-plus-medical"></i></span>
+            </h5>
+          </div>
 
-                           <div class="subtotal"><h4>$7</h4></div>
-                       </div>
-                   </div>
+          <div class="menu-image">
+            <div class="c-image">
+              <img src="./images/banga.jpg" alt="" class="menu-img" />
+            </div>
+            <h4 class="food-name">BANGA SOUP</h4>
+            <h5>
+              <strong>$11</strong>
+              <span class="add-icon"><i class="bx bx-plus-medical"></i></span>
+            </h5>
+          </div>
+        </div>
+      </div>
 
+      <div id="reservation" class="container cartDetail">
+        <h1>CART</h1>
 
-                <div class="shopping-main">
-                    <div class="shopping-item">
-                        <div class="image-text">
-                            <div class="img-shopping">
-                                <img src="./images/ponded yam1.jpg" alt="">
-                            </div>
-                            <div class="text">
-                                <h3>OUNDED YAM AND ILA-ALASEPO</h3>
-                                <h4 class="resrved-price">PRICE: <span class="price-R">$10</span></h4>
-                                <button>REMOVE</button>
-                            </div>
-                        </div>
+        <div class="shopping-container">
+          <div class="shopping-header">
+            <h4>FOOD</h4>
+            <h4>QUANTITY</h4>
+            <h4>SUBTOTAL</h4>
+          </div>
 
-                        <div class="input">
-                            <input class="input-num" type="number" value="1" min="1" name="" id="">
-                        </div>
-
-                        <div class="subtotal"><h4>$7</h4></div>
-                    </div>
-                </div> -->
-
-
-                <!-- <div class="shopping-main">
-                    <div class="shopping-item">
-                        <div class="image-text">
-                            <div class="img-shopping">
-                                <img src="./images/amala1.jpg" alt="">
-                            </div>
-                            <div class="text">
-                                <h3>AMALA AND EWEDU</h3>
-                                <h4>PRICE: $9</h4>
-                                <button>REMOVE</button>
-                            </div>
-                        </div>
-
-                        <div class="input">
-                            <input type="number" value="1" min="1" name="" id="">
-                        </div>
-
-                        <div class="subtotal"><h4>$7</h4></div>
-                    </div>
-                </div> -->
-
-<!-- 
-                <div class="shopping-main">
-                    <div class="shopping-item">
-                        <div class="image-text">
-                            <div class="img-shopping">
-                                <img src="./images/jollof2.jpg" alt="">
-                            </div>
-                            <div class="text">
-                                <h3>JOLLOF RICE AND CHICKEN</h3>
-                                <h4>PRICE: $10</h4>
-                                <button>REMOVE</button>
-                            </div>
-                        </div>
-
-                        <div class="input">
-                            <input type="number" value="1" min="1" name="" id="shop-input">
-                        </div>
-
-                        <div class="subtotal"><h4>$7</h4></div>
-                    </div>
-                </div> -->
-                
-
-                <div class="summation">
-                    <div class="sub">
-                        <h4 >TOTAL</h4>
-                        <h4 class="final-price">$0</h4>
-                    </div>
-
-                    <div class="sub">
-                        <h4>DELIVERY</h4>
-                        <h4 class="delivery-fee">$0</h4>
-                    </div>
-
-                    <div class="sub">
-                        <h4>SUM-TOTAL</h4>
-                        <h4 class="sum-total">$0</h4>
-                    </div>
-                </div>
-               </div> 
+          <div class="summation">
+            <div class="sub">
+              <h4>TOTAL</h4>
+              <h4 class="final-price">$0</h4>
             </div>
 
-            <div id="contact">
-                <h1>CONTACT</h1>
-                <div class="info-wrap">
-                    <h2>CONTACT INFO</h2>
-                    <div class="contact-info">
-                       <ul>
-                           <li>
-                               <div><i class='bx bx-location-plus'></i></div>
-                               <h4>Address: <br><span>45, okiki street, Ago Place, Okota-Lagos</span></h4>
-                           </li>
-                           <li>
-                               <div><i class='bx bx-mail-send'></i></div>
-                               <h4>Email: <br><span>creativitytraz22@gmail.com</span></h4>
-                           </li>
-                           <li>
-                               <div><i class='bx bxs-phone-call'></i></div>
-                               <h4>Mobile: <br><span> 08068095923</span></h4>
-                           </li>
-                           <li>
-                               <div><i class='bx bxl-github' ></i></div>
-                               <h4>GitHub: <br><span>https://github.com/aosenit</span></h4>
-                           </li>
-                       </ul>
-                   </div> 
-                 </div>
+            <div class="sub">
+              <h4>DELIVERY</h4>
+              <h4 class="delivery-fee">$0</h4>
             </div>
-        </main>
 
-        <footer>
-            <h5>Adedoyin  <br>&#169; 2021 copyright all right reserved</h5>
-            <img src="./images/payment.png" alt="">
-            <div class="scroll-up"><i class='bx bxs-chevrons-up'></i></div>
-            <div class="change-theme"><i class='bx bx-moon'></i></div>
+            <div class="sub">
+              <h4>SUM-TOTAL</h4>
+              <h4 class="sum-total">$0</h4>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        </footer>
-    </div>
+      <div id="contact" class="container">
+        <h1>CONTACT</h1>
+        <div class="info-wrap">
+          <div class="contact-info">
+            <ul>
+              <li>
+                <div><i class="bx bx-location-plus"></i></div>
+                <h4>
+                  Address: <br /><span
+                    >45, okiki street, Ago Place, Okota-Lagos</span
+                  >
+                </h4>
+              </li>
+              <li>
+                <div><i class="bx bx-mail-send"></i></div>
+                <h4>Email: <br /><span>creativitytraz22@gmail.com</span></h4>
+              </li>
+              <li>
+                <div><i class="bx bxs-phone-call"></i></div>
+                <h4>Mobile: <br /><span> 08068095923</span></h4>
+              </li>
+              <li>
+                <div><i class="bx bxl-github"></i></div>
+                <h4>GitHub: <br /><span>https://github.com/aosenit</span></h4>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-</body>
-<script src="script.js"></script>
+        <div class="contactForm">
+          <form action="">
+            <div>
+              <h4>Fullname:</h4>
+              <input type="text" placeholder="Enter your full name" />
+            </div>
+            <div>
+              <h4>Email:</h4>
+              <input type="email" placeholder="Enter your email" />
+            </div>
+            <div>
+              <h4>Phone:</h4>
+              <input type="phone" placeholder="Enter your phone number" />
+            </div>
+            <div>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Type here..."
+              ></textarea>
+            </div>
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h5>
+        Designed by Adedoyin <span>TRAZ</span> <br />&#169; 2021 copyright all
+        right reserved
+      </h5>
+      <img src="./images/payment.png" alt="" />
+      <div class="scroll-up"><i class="bx bxs-chevrons-up"></i></div>
+      <div class="change-theme"><i class="bx bx-moon"></i></div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
 </html>
