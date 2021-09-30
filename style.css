@@ -2,7 +2,7 @@
 :root {
   --white-color:white ;
   --font-color:#000;
-  --style-color: rgb(3, 3, 218);
+  --style-color: rgb(244, 97, 0);
 }
 
 * {
@@ -70,7 +70,6 @@ header {
   font-size: 1.3em;
   font-weight: 700;
   background-color: var(--white-color);
-  color: var(--style-color);
   z-index: 100;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -95,7 +94,7 @@ header nav {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 8rem;
+  margin-top: 6rem;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -110,7 +109,7 @@ header nav li {
   -webkit-transition: 0.5 ease border-left;
   transition: 0.5 ease border-left;
   margin-bottom: 30px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   opacity: .7;
   padding-left: 20px;
 }
@@ -130,7 +129,7 @@ header nav .active {
 
 header nav a {
   font-size: 1em;
-  color: var(--style-color);
+  color: inherit;
 }
 
 header .logo {
@@ -159,7 +158,7 @@ header .logo img {
   font-size: 1.5rem;
   position: relative;
   cursor: pointer;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .headerIcons {
@@ -242,7 +241,6 @@ main {
 }
 
 #home .text h1 {
-  color: var(--style-color);
   margin-bottom: 10px;
   margin-top: 1.5em;
 }
@@ -483,6 +481,7 @@ main {
 .cartDetail {
   position: absolute;
   background-color: var(--white-color);
+  color: var(--font-color);
   min-height: 100vh;
   top: 6rem;
   width: 100%;
@@ -490,6 +489,7 @@ main {
   padding: 0 30px;
   -webkit-transition: right .5s linear;
   transition: right .5s linear;
+  z-index: 800;
 }
 
 .cartDetail h1 {
@@ -758,7 +758,7 @@ form button:hover {
 }
 
 footer {
-  font-size: 1.4em;
+  font-size: 1.1em;
   border-top: #e9e9e9 1px solid;
   margin-top: 1em;
   width: 100%;
@@ -774,13 +774,13 @@ footer .scroll-up {
   color: var(--style-color);
   padding: 0.2em 0.5em;
   font-size: 1.3em;
+  display: none;
 }
 
 footer .change-theme {
   position: absolute;
   bottom: 0;
   left: 0;
-  color: var(--style-color);
   padding: 0.2em 0.5em;
   font-size: 2em;
 }
@@ -938,7 +938,6 @@ footer span {
     border: var(--style-color) solid 2px;
   }
   header nav a {
-    color: var(--style-color);
     font-size: 1em;
     font-weight: 700;
     letter-spacing: .2em;
