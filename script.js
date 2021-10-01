@@ -53,13 +53,21 @@ let localData = localStorage.getItem("currentTheme");
 if (localData) {
   wrapper.classList.add("dark");
 }
+
+if (wrapper.classList.contains("dark")) {
+  changeTheme.innerHTML = `<i class="bx bx-sun">`;
+} else {
+  changeTheme.innerHTML = `<i class="bx bx-moon">`;
+}
 changeTheme.addEventListener("click", () => {
   wrapper.classList.toggle("dark");
 
   if (wrapper.classList.contains("dark")) {
     localStorage.setItem("currentTheme", "enabled");
+    changeTheme.innerHTML = `<i class="bx bx-sun">`;
   } else {
     localStorage.removeItem("currentTheme");
+    changeTheme.innerHTML = `<i class="bx bx-moon">`;
   }
 
   console.log("clicked");
