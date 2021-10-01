@@ -7,9 +7,18 @@ const cart = document.querySelector(".cart");
 const cartDetail = document.querySelector(".cartDetail");
 const navLists = Array.from(Lists);
 
+const handleCart = () => {
+  cartDetail.classList.toggle("showCart");
+};
+cart.addEventListener("click", handleCart);
+
 const handleToggle = () => {
   nav.classList.toggle("show");
   Toggle.classList.toggle("left-show");
+
+  if (nav.classList.contains("show")) {
+    cartDetail.classList.remove("showCart");
+  }
 };
 
 Toggle.addEventListener("click", handleToggle);
@@ -25,11 +34,6 @@ navLists.forEach((nav) => {
   nav.addEventListener("click", HandleMenus);
 });
 
-const handleCart = () => {
-  cartDetail.classList.toggle("showCart");
-};
-cart.addEventListener("click", handleCart);
-
 const scrollingUp = document.querySelector(".scroll-up");
 const rootElement = document.documentElement;
 
@@ -41,7 +45,7 @@ scrollingUp.addEventListener("click", () => {
 });
 
 const changeTheme = document.querySelector(".change-theme");
-console.log(changeTheme);
+
 const wrapper = document.querySelector(".wrapper");
 
 let localData = localStorage.getItem("currentTheme");

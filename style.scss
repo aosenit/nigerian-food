@@ -43,11 +43,16 @@ body{
     background-color: var(--white-color);
     color: var(--font-color);
     margin: 0 auto;
+    position: relative;
 }
 .container{
    max-width: 1240px;
    min-width: 350px;
    padding: 0 20px;
+}
+
+h1{
+    font-size: 18px;
 }
 
 header{
@@ -73,19 +78,19 @@ header{
     nav{
         position: absolute;
         right: -100%;
-        top: 1em;
+        top: 0em;
         width: 100%;
         height: calc(100vh);
         display: flex;
         flex-direction: column;
         background-color: var(--white-color) ;
         align-items: flex-start;
-        margin-top: 6rem;
+        margin-top: 5rem;
         justify-content: flex-start;
         font-size: .7em;
         z-index: 999;
         transition: right linear 0.5s;
-        padding: 0 40px;
+        padding: 30px 40px 0;
 
         li{
         transition: 0.5 ease border-left;
@@ -186,7 +191,7 @@ main{
 
         img{
             object-fit: cover;
-            object-position: left;
+            object-position:center left;
             width: 100%;
             height: 100%;
             border-radius: 30px;
@@ -202,6 +207,7 @@ main{
             
             margin-bottom: 10px;
             margin-top: 1.5em;
+            font-size: 2rem;
         }
        
         p{
@@ -245,7 +251,7 @@ main{
         padding: 1em 0 .5em;
     }
     p{
-        font-size: 1.2em;
+        font-size: 1em;
         text-align: justify;
         margin: 1.5rem 0;
       
@@ -325,7 +331,7 @@ main{
         width: 100%;
         grid-template-columns: minmax(200px, 100%);
         justify-items: center;
-        gap: 20px;
+        gap: 30px;
     }
 
     .menu-image{
@@ -333,8 +339,8 @@ main{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        border: 1px solid rgb(230, 228, 228);
-        height: 350px;
+        border: 1px solid rgba(0,0,0,0.11);
+        height: 300px;
         overflow: hidden;
 
         .c-image{
@@ -347,13 +353,13 @@ main{
         h4{
             padding: 1em 0 .5em;
             color: var(--style-color);
-            font-size: 1.2em;
+            font-size: 1em;
             font-weight: bold;
         }
 
         h5{
             margin-bottom: 1em;
-            font-size: 1.3em;
+            font-size: 1em;
             display: flex;
             width: 100%;
             padding: 0 20px;
@@ -361,7 +367,7 @@ main{
             align-items: center;
 
            .add-icon{
-               font-size: 18px;
+               font-size: 14px;
                font-weight: 900;
            }
 
@@ -391,7 +397,7 @@ main{
     background-color: var(--white-color);
     color: var(--font-color);
     min-height: 100vh;
-    top: 6rem;
+    top: 5rem;
     width: 100%;
     right: -100%;
     padding: 0 30px;
@@ -400,6 +406,8 @@ main{
 
     h1{
         padding: 1em 0 .5em;
+        text-align: center;
+        font-size: 1.3em;
     }
 
     .shopping-container{
@@ -485,7 +493,7 @@ main{
     }
 
     .summation{
-        border-top: 1px solid rgb(230, 228, 228);
+        border-top: 1px solid rgba(0,0,0,0.11);
         margin-top: 3em;
         width: 100%;
 
@@ -493,7 +501,7 @@ main{
             padding: 1em 0;
             display: flex;
             justify-content: space-between;
-            font-size: 1.6em;
+            font-size: 1.2em;
         }
     }
 }
@@ -503,7 +511,7 @@ main{
 }
 
 #contact{
-    font-size: 16px;
+    font-size: 12px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -514,6 +522,10 @@ main{
         padding: 1em 0 .5em;
     }
 
+    .contactContainer{
+        width: 100%;
+    }
+
     .info-wrap{
          
           border-radius: 5px;
@@ -521,7 +533,7 @@ main{
           display: flex;
           flex-direction: column;
           
-          align-items: center;
+          align-items: flex-start;
           margin-top: 1em;
           
 
@@ -550,14 +562,14 @@ main{
           display: flex;
           align-items: center;
           justify-content:flex-start;
-          padding: 1em .5em  1.3em ;
-          font-size: 1.1em;
+          padding: 1em  0 1.3em ;
+          font-size: 16px;
           text-align: left;
 
           .bx{
               margin-right: 1em;
               color: var(--style-color);
-              font-size: 1.5em;
+              font-size: 16px;
           }
 
       }
@@ -574,7 +586,7 @@ form{
           display: flex;
           flex-direction: column;
           width: 100%;
-          font-size: 18px;
+          font-size: 16px;
 
 
           > div{
@@ -586,7 +598,7 @@ form{
               padding: 10px 0;
               margin-top: 10px;
               border: none;
-              border-bottom: rgb(233, 233, 233) 1px solid; 
+              border-bottom: rgba(0,0,0,0.11) 1px solid; 
               width: 100%;
               outline: none;
           }
@@ -594,7 +606,7 @@ form{
           textarea{
             margin-top: 10px;
             border: none;
-            border-bottom: rgb(233, 233, 233) 1px solid; 
+            border-bottom: rgba(0,0,0,0.11) 1px solid; 
             width: 100%;
             outline: none;
           }
@@ -630,7 +642,7 @@ form{
 
 footer{
     font-size: 1.1em;
-   border-top:  rgb(233, 233, 233) 1px solid;
+    border-top: rgba(0,0,0,0.11) 1px solid;
     margin-top: 1em;
     width: 100%;
     padding: 1em 2em;
@@ -665,45 +677,25 @@ footer{
     }
 }
 
-@media screen and (min-width:400px){
-   .home__image{
-        height: 250px;
-        width: 80%;
-   } 
 
-   #home .text button {
-        padding: 1em 1.4em;
-        font-weight: 800;
-       
-   }
+@media screen and (min-width:650px){
+   #home{
+       flex-direction: row;
+       justify-content: space-around;
 
-   #about{
-       min-height: 70vh;
-   }
+       .text{
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+           justify-content: center;
+           margin-top: 50px;
 
-   #about .body{
-       min-height: 50vh;
-   }
 
-   #reservation .shopping-container{
-       font-size: 12px;
-   }
-
-  #contact .info-wrap{
-    font-size: 1.3em
-  }
-
-  footer img {
-    font-size: 14px;
-    width: 200px;
-}
-
-}
-
-@media screen and (min-width:600px){
-   #home .home__image{
-        height: 300px;
-        width: 85%;
+           button{
+               margin-top: 20px;
+               font-size: .8rem;
+           }
+       }
    } 
 
    #about{
@@ -716,7 +708,6 @@ footer{
 
     #menu .image-grid{
         grid-template-columns:1fr 1fr ;
-        grid-column-gap: 1em;
     }
 
     #reservation .shopping-container{
@@ -727,51 +718,39 @@ footer{
         }
     }
 
-    #reservation .img-shopping{
-        width: 8em;
-    }
+
+    .contactContainer{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 20px;
+
+        .info-wrap{
         
-    #reservation .input{
-        margin-left: -8em;
-        
+
+            .contact-info{
+
+                ul{
+                    margin-top: 0 !important;
+                    
+                    li{
+                        padding-top: 0 !important;
+                        padding-bottom: 38px !important;
+                    }
+                }
+            }
+        }
     }
 
-    #reservation input{
-        width: 2em;
-        font-size: 1.5em;
+    .contactForm button{
+        width: 120px;
     }
 
-    #reservation .summation {
-        font-size: .8em;
-    }
-
-    #contact .contact-info{
-        align-self: flex-start;
-        padding-left: 2em;
+    footer > img{
+        width: 200px;
     }
 }
 
-@media screen and (min-width:750px){
 
-    #home{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #home .text{
-        font-size: 1.3em;
-        width: 45%;
-        height: 250px;
-    
-    }
-
-    
-#home .home__image {
-    width: 10%;
-    height: 250px;
-    border-radius: 30px;
-}
-}
 
 @media screen and (min-width:980px){
 
@@ -790,59 +769,81 @@ footer{
             position: relative;
             right: 0;
             top: 0;
-            background-color: var(--whitecolor);
-            width: 80%;
-            height:  5em;
-            display: flex;
+            flex-direction: row;
+            justify-content: center;
             align-items: center;
+            margin: 0;
+            height: 100%;
+            width: 100%;
         } 
                 
     }
 
     header nav{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-
+        
+        padding: 0;
 
         li{
            transition: 0.5s border;
             padding: 0;
-            border-radius: 10px;
-            margin-left: 1em;
-            padding: 0.5em 1.5em;
-            margin-left: 5em;
-            font-size: .8em;
-        }
-
-         .active, li:hover{
-            border: var(--style-color) solid 2px;
-        }
-
-        a{
+            padding: 0em 0 5px;
+            margin: 0 30px 0;
             
-            font-size: 1em;
-            font-weight: 700;
-            letter-spacing: .2em;
         }
+
+         .active{
+            border: none;
+            border-bottom: var(--style-color) solid 1px;
+
+        }
+
 
      
     }
 
 
     #home{
-        padding: 0 3em;
-    }
-    #home .home__image{
-        min-width: 35%;
-        height: 300px;
-        border-radius: 30px;
-    
+
+        justify-content: center;
+        gap: 0 20rem;
+        height: 100vh;
+
+        .text > h1{
+            font-size: 3em;
+        }
+
+        .text > p{
+            word-spacing: 20px;
+        }
     }
 
+    #about{
+        
+        min-height: 100vh;
+
+        p{
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        .about__image{
+            position: relative;
+            height: 12em;
+            width: 14em;
+         
+        }
+        
+    
+        }
+        #about .body{
+            min-height: 80vh;
+        }
+
+
+        #contact{
+            min-height: 100vh;
+            justify-content: center;
+        
+            }
    
 
     #reservation{
@@ -875,35 +876,30 @@ footer{
     }
 }
 
-@media screen and (min-width:1280px){
+@media screen and (min-width:1440px){
 
+    #home{
+
+        .home__image{
+            height: 500px;
+            width: 500px;
+           
+        }
+    }
     #menu .image-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-}
- #about{
-        .about__image{
-            position: relative;
-            height: 12em;
-            width: 14em;
-         
-        }
-  
-    } 
-    #about{
-        min-height: 100vh;
-    
-        }
-        #about .body{
-            min-height: 80vh;
-        }
+        margin-top: 40px;
 }
 
+#about{
+        
 
-@media screen and (min-width:1800px){
-    body{
-        font-size: 18px;
-    }
-    #home{
-        justify-content: center;
+    p{
+        font-size: 1.1rem;
+        margin-top: 40px;
     }
 }
+
+   
+}
+
